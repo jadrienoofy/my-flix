@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <title>MyFlix</title>
+</head>
+<body>
+    <nav class="top-nav">
+      <div class="navleft">
+        <h1 class="font-bold">MyFlix</h1>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">tv shows</a></li>
+          <li><a href="#">movies</a></li>
+          <li><a href="#">games</a></li>
+          <li><a href="#">new & popular</a></li>
+          <li><a href="#">my list</a></li>
+          <li><a href="#">browse by language</a></li>
+        </ul>
+      </div>
+      <div class="navright">
+        <form action="" class="search-form">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search">
+        </form>
+      </div>
+    </nav>
+    <section class="hero">
+      <h2>Unlimited Entertainment, Anytime.</h2>
+      <p>Watch the best movies ans shows in one place. No ads. No interruptions.</p>
+      <button class="inline-flex items-center gap-2 bg-red-600 text-gray-900 font-medium px-4 py-3 rounded-lg hover:bg-red-700 transition duration-300 mt-2">
+          <a href="#">▶ Watch Now</a>
+      </button>
+    </section>
+    <section>
+      <h2 class="font-bold text-[34px] text-center mt-5">Now Showing</h2>
+      <div class="flex flex-wrap items-center justify-center mt-6 gap-7">
+        <div class="max-w-[1600px] grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-7 px-2">
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/fast.jpg" alt="Fast X" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transform transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/mada.jpg" alt="Madagascar" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/aqua.avif" alt="Aquaman" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/mc.jpg" alt="Minecraft" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/baby.jpg" alt="Baby Driver" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/jura.webp" alt="Jurassic Park" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/meg.jpg" alt="The Meg" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/conju.jpg" alt="The Conjuring" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+            <a href="#"><img src="images/car.jpg" alt="Cars" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          </div>
+          <div class="transition transform-transition duration-300 hover:scale-105">
+          <a href="#"><img src="images/toy.jpg" alt="Toy Story" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="font-bold text-[30px] text-center mt-10">Browse by Genre</h2>
+      <div class=" max-w-[1900px] flex-wrap mt-6 gap-5 md:gap-3 items-center justify-center px-2 py-5 grid grid-cols-2 md:grid-cols-6">
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Action</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Drama</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Comedy</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Horror</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Romance</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Sci-Fi</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Fantasy</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Thriller</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300"> 
+          <button><a class="font-bold" href="#">Adventure</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Anime</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Documentary</a></button>
+        </div>
+        <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
+          <button><a class="font-bold" href="#">Musical</a></button>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
