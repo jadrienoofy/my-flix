@@ -16,11 +16,13 @@ body {
 
 .top-nav {
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  position: sticky;
+  background-color: #111;
+  top: 0;
+  z-index: 1;
 }
 
 .navleft {
@@ -120,3 +122,35 @@ body {
   font-size: 1.3rem;
 }
 
+@media (max-width: 768px) {
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .search-form {
+    margin-top: 9px;
+    margin-left: -100px;
+  }
+  .hero p {
+    font-size: 0.8rem;
+  }
+  .navleft h1 {
+    font-size: 15px;
+  }
+  .navright input {
+    width: 100%;
+    padding: 10px 30px 10px 35px;
+    font-size: 1rem;
+  }
+  .navright input::placeholder {
+    color: transparent;
+  }
+  .hide {
+    display: none;
+  }
+}

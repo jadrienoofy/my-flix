@@ -12,68 +12,82 @@
     <nav class="top-nav">
       <div class="navleft">
         <h1 class="font-bold">MyFlix</h1>
+        <div class="relative md:hidden">
+    <button onclick="showDropdown()" id="dropdownToggle" class="ml-2 mt-3 text-[10px] font-semibold px-3 py-2 rounded md:hover:bg-red-700 transition">
+      Browse ▼
+    </button>
+        <ul id="dropdownMenu" class="absolute left-[-60px] mt-2 w-48 bg-[#1e1e1e] rounded shadow-lg hidden text-sm font-medium flex-col" style="display: none;">
+          <li><a href="#" class="block px-4 py-2">Home</a></li>
+          <li><a href="#" class="block px-4 py-2">TV Shows</a></li>
+          <li><a href="#" class="block px-4 py-2">Movies</a></li>
+          <li><a href="#" class="block px-4 py-2">Games</a></li>
+          <li><a href="#" class="block px-4 py-2">New & Popular</a></li>
+          <li><a href="#" class="block px-4 py-2">My List</a></li>
+          <li><a href="#" class="block px-4 py-2">Browse by Language</a></li>
+        </ul>
+  </div>
         <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">tv shows</a></li>
-          <li><a href="#">movies</a></li>
-          <li><a href="#">games</a></li>
-          <li><a href="#">new & popular</a></li>
-          <li><a href="#">my list</a></li>
-          <li><a href="#">browse by language</a></li>
+          <li><a href="#" class="hide">home</a></li>
+          <li><a href="#" class="hide">tv shows</a></li>
+          <li><a href="#" class="hide">movies</a></li>
+          <li><a href="#" class="hide">games</a></li>
+          <li><a href="#" class="hide">new & popular</a></li>
+          <li><a href="#" class="hide">my list</a></li>
+          <li><a href="#" class="hide">browse by language</a></li>
         </ul>
       </div>
       <div class="navright">
         <form action="" class="search-form">
           <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search">
+          <input type="text" placeholder="Search" class="bg-transparent text-white placeholder-gray-400 focus:outline-none">
         </form>
       </div>
     </nav>
     <section class="hero">
       <h2>Unlimited Entertainment, Anytime.</h2>
       <p>Watch the best movies ans shows in one place. No ads. No interruptions.</p>
-      <button class="inline-flex items-center gap-2 bg-red-600 text-gray-900 font-medium px-4 py-3 rounded-lg hover:bg-red-700 transition duration-300 mt-2">
+      <button class="inline-flex items-center gap-2 bg-red-600 text-gray-900 font-medium px-3 py-2 md:px-4 md:py-3 rounded-lg hover:bg-red-700 transition duration-300 mt-2">
           <a href="#">▶ Watch Now</a>
       </button>
     </section>
     <section>
-      <h2 class="font-bold text-[34px] text-center mt-5">Now Showing</h2>
+      <h2 class="font-bold text-[25px] md:text-[34px] text-center mt-5">Now Showing</h2>
       <div class="flex flex-wrap items-center justify-center mt-6 gap-7">
         <div class="max-w-[1600px] grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-7 px-2">
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/fast.jpg" alt="Fast X" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/fast.jpg" alt="Fast X" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transform transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/mada.jpg" alt="Madagascar" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transform transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/mada.jpg" alt="Madagascar" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/aqua.avif" alt="Aquaman" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/aqua.avif" alt="Aquaman" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/mc.jpg" alt="Minecraft" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/mc.jpg" alt="Minecraft" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/baby.jpg" alt="Baby Driver" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/baby.jpg" alt="Baby Driver" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/jura.webp" alt="Jurassic Park" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/jura.webp" alt="Jurassic Park" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/meg.jpg" alt="The Meg" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/meg.jpg" alt="The Meg" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/conju.jpg" alt="The Conjuring" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/conju.jpg" alt="The Conjuring" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-            <a href="#"><img src="images/car.jpg" alt="Cars" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+            <a href="#"><img src="images/car.jpg" alt="Cars" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
           </div>
-          <div class="transition transform-transition duration-300 hover:scale-105">
-          <a href="#"><img src="images/toy.jpg" alt="Toy Story" class="h-[400px] md:h-[500px] w-full rounded-lg"></a>
+          <div class="transition transform-transition duration-300 md:hover:scale-105">
+          <a href="#"><img src="images/toy.jpg" alt="Toy Story" class="h-[300px] md:h-[500px] w-full rounded-lg"></a>
         </div>
       </div>
     </section>
     <section>
-      <h2 class="font-bold text-[30px] text-center mt-10">Browse by Genre</h2>
+      <h2 class="font-bold text-[20px] md:text-[30px] text-center mt-10">Browse by Genre</h2>
       <div class=" max-w-[1900px] flex-wrap mt-6 gap-5 md:gap-3 items-center justify-center px-2 py-5 grid grid-cols-2 md:grid-cols-6">
         <div class="flex items-center justify-center min-w-[120px] h-[55px] bg-[#1e1e1e] rounded-lg hover:bg-red-700 transition duration-300">
           <button><a class="font-bold" href="#">Action</a></button>
@@ -113,5 +127,136 @@
         </div>
       </div>
     </section>
+    <section class="py-10 px-4 bg-[#111] text-white">
+  <h2 class="text-2xl font-bold mb-4">Top Rated</h2>
+  <div class="relative">
+    <button id="leftBtn" class="absolute left-0 top-1/2 -translate-y-1/2 z-1 bg-black bg-opacity-50 hover:bg-opacity-80 p-2 rounded-full">
+      &#8592;
+    </button>
+    <div id="carousel" class="flex gap-4 overflow-x-hidden scroll-smooth snap-x scrollbar-hide">
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/moa.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Moana 2</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/fas.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">F9</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/elio.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Elio</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/snow.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Snow White</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/jumanji.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Jumanji</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/dragon.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">How to Train My Krisha</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/pusit.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Squid Game 3</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/top.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Top Gun: Maverick</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/f1.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">F1 the Movie</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/titanic.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Titanic</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/zoo.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Zootopia 2</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/re.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">Resident Evil The Final Chapter</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/ff.jpg" alt="Movie 1" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">The Fast and the Furious</p>
+      </div>
+      <div class="min-w-[200px] bg-[#1e1e1e] rounded-lg p-4 snap-start">
+        <img src="images/tokyo.jpg" alt="Movie 2" class="w-full h-50 object-cover rounded">
+        <p class="mt-2 font-semibold">The Fast and the Furious: Tokyo Drift</p>
+      </div>
+    </div>
+    <button id="rightBtn" class="absolute right-0 top-1/2 -translate-y-1/2 z-1 bg-black bg-opacity-50 hover:bg-opacity-80 p-2 rounded-full">
+      &#8594;
+    </button>
+  </div>
+</section>
+<footer class="bg-[#1e1e1e] text-gray-300 py-10 mt-10">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+      <h2 class="text-2xl font-bold text-white">MyFlix</h2>
+      <p class="mt-2 text-sm text-gray-400">Your portal to endless entertainment.</p>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold mb-2 text-white">Explore</h3>
+      <ul class="space-y-1">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">TV Shows</a></li>
+        <li><a href="#" class="hover:underline">Movies</a></li>
+        <li><a href="#" class="hover:underline">Genres</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold mb-2 text-white">Connect</h3>
+      <div class="flex space-x-4 mt-2">
+        <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
+    &copy; 2025 MyFlix. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('carousel');
+    const leftBtn = document.getElementById('leftBtn');
+    const rightBtn = document.getElementById('rightBtn');
+    const dropdownToggle = document.getElementById('dropdownToggle');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    leftBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -250, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: 350, behavior: 'smooth' });
+    });
+
+    // Toggle dropdown visibility
+    dropdownToggle.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent closing immediately after opening
+      dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Hide dropdown if clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownMenu.contains(e.target) && !dropdownToggle.contains(e.target)) {
+        dropdownMenu.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</script>
 </body>
 </html>
